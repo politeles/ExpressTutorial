@@ -67,5 +67,19 @@ workQueue.on('global:completed', (jobId, result) => {
 ```
 
 
+
 ## Create the worker code
 See the file worker.js
+
+
+
+## Test it!
+
+You can use Postman to test the functionality of the workers.
+Create a new request that GET http://localhost:3000/job
+You will receive immediately the job ID, after the job is completed, you will receive a message in the app screen:
+
+```
+Job completed with result {"value":"This will be stored"}
+```
+
